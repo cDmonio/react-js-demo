@@ -3,8 +3,16 @@ import './TodoSearch.css'
 
 function TodoSearch()
 {
+    const onChangeSearchValue = (event) => {
+        console.log(event.target.value);
+    };
+
     return (
-        <input className="TodoSearch" placeholder="Prueba" />
+        <input 
+            className="TodoSearch" 
+            placeholder="Prueba" 
+            onChange={onChangeSearchValue}
+        />
     );
 }
 
